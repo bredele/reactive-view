@@ -9,7 +9,36 @@
 
 ## API
 
-   
+```js
+var View = require('reactive-view');
+
+var view = new Stack();
+
+//you can add bindings before rendering your view
+stack.bind('do', function(){
+  //do something
+});
+
+//reactive your view and place into the DOM
+stack.place(document.querySelector('#anchore'), "beforebegin")
+```
+
+
+### Stack#bind(name, fn)
+
+  Create a binding before (or after:TODO) rendering
+
+### Stack#place(dom, location)
+
+  Append/Insert your view into the DOM
+
+### Stack#render(template, model)
+
+  Render your template with an optional model.
+
+### Stack#alive(dom)
+
+  Create View from DOM.
 
 ## License
 

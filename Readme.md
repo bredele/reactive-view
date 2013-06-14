@@ -19,6 +19,11 @@ stack.bind('do', function(){
   //do something
 });
 
+view.render("<span data-text='name < firstname lastname'></span>", {
+  firstname : "Katty",
+  lastname : "Perry"
+})
+
 //reactive your view and place into the DOM
 stack.place(document.querySelector('#anchore'), "beforebegin")
 ```

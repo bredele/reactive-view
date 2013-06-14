@@ -12,7 +12,7 @@
 ```js
 var View = require('reactive-view');
 
-var view = new Stack();
+var view = new View();
 
 //you can add bindings before rendering your view
 stack.bind('do', function(){
@@ -29,19 +29,19 @@ stack.place(document.querySelector('#anchor'), "beforebegin")
 ```
 
 
-### Stack#bind(name, fn)
+### View#bind(name, fn)
 
   Create a binding before (or after:TODO) rendering
 
-### Stack#place(dom, location)
+### View#place(dom, location)
 
   Append/Insert your view into the DOM
 
-### Stack#render(template, model)
+### View#render(template, model)
 
   Render your template with an optional model.
 
-### Stack#alive(dom)
+### View#alive(dom)
 
   Create View from DOM.
 

@@ -15,11 +15,11 @@ var View = require('reactive-view');
 var view = new View();
 
 //you can add bindings before rendering your view
-stack.bind('do', function(){
+stack.bind('do', function(el, name){
   //do something
 });
 
-view.render("<span data-text='name < firstname lastname'></span>", {
+view.render("<span do='something' data-text='name < firstname lastname'></span>", {
   firstname : "Katty",
   lastname : "Perry"
 })

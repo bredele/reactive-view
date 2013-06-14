@@ -1,0 +1,17 @@
+{
+  "name": "reactive-view",
+  "repo": "bredele/reactive-view",
+  "description": "A simple (but not yet tested) View pattern for Reactive.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/reactive": "*",
+    "component/domify": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

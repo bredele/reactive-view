@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>   
+<body>
+  <script src="../build/build.js"></script>
+  <script>
+    var View = require('reactive-view');
+
+    var view = new View({
+      test : function(){
+        alert('ola');
+      }
+    });
+    view.render('<p>{name} <small data-text="lastname"></small><button on-click="test">button</button> <strong quoi="really?"></strong></p>', {
+      name : 'katy',
+      lastname : 'Perry'
+    });
+    view.bind("singer", function(el, name){
+      console.log(el, name);
+    });
+    view.place(document.body);
+  </script>
+</body>
+</html>

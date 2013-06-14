@@ -25,7 +25,7 @@ view.render("<span data-text='name < firstname lastname'></span>", {
 })
 
 //reactive your view and place into the DOM
-stack.place(document.querySelector('#anchore'), "beforebegin")
+stack.place(document.querySelector('#anchor'), "beforebegin")
 ```
 
 
